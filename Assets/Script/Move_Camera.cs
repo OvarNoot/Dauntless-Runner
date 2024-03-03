@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Move_Camera : MonoBehaviour
 {
-    public Transform cameraPosition;
+    public Transform cameraPosition; 
 
     // Update is called once per frame
     private void Update()
