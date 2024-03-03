@@ -231,8 +231,6 @@ MonoBehaviour:
   sensX: 400
   sensY: 400
   orientation: {fileID: 1128129958}
-  xRotation: 0
-  yRotation: 0
 --- !u!1 &461215877
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,14 +854,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c15a7afa9816bd48892f63788bc4565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
   walkSpeed: 7
   spinrtSpeed: 10
   groundDrag: 5
   jumpForce: 9
   jumpCooldown: 0.25
   airMultiplier: 0.4
-  readyToJump: 0
   crouchSpeed: 3.5
   crouchYScale: 0
   startYScale: 0
@@ -872,16 +868,37 @@ MonoBehaviour:
   crouchKey: 306
   playerHeight: 2
   whatIsGround:
+    serializedVersion: 2
     m_Bits: 1024
-  grounded: 0
   maxSlopeAngle: 40
-  exitingSlope: 0
   orientation: {fileID: 1128129958}
-  horizontalInput: 0
-  verticalInput: 0
-  moveDirection: {x: 0, y: 0, z: 0}
-  rb: {fileID: 0}
   state: 0
+--- !u!1 &1102438628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+  m_PrefabInstance: {fileID: 1778904271}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1102438629
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102438628}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd801e49f966b94289246cb8dd35c4aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1128129957
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,6 +1037,66 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479951783}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1778904271
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.64
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      propertyPath: m_Name
+      value: Prisoner B Styperek@Zombie Idle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1102438629}
+  m_SourcePrefab: {fileID: 100100000, guid: 15603425dbdabf720811f1adfdad6ea5, type: 3}
 --- !u!1 &1910506737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,3 +1351,4 @@ SceneRoots:
   - {fileID: 1910506741}
   - {fileID: 934217325}
   - {fileID: 461215881}
+  - {fileID: 1778904271}
