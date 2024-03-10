@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Move_Camera.cs" />
     <Compile Include="Assets\Script\Sliding.cs" />
+    <Compile Include="Assets\Script\Climbing.cs" />
     <Compile Include="Assets\Script\Wall_Running.cs" />
     <Compile Include="Assets\Script\Player_Cam_Movement.cs" />
     <Compile Include="Assets\Script\Player_Movement.cs" />
